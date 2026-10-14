@@ -56,7 +56,14 @@ public class MaquinaExpendedoraSimple {
     public void introducirDinero(int cantidadIntroducida) {
         balanceClienteActual = balanceClienteActual + cantidadIntroducida;
     }
-
+    
+    /**
+     * Simula el precio de billete que introduzcamos como parámetro
+     */
+    public void setPrecioBillete(int precioDelBillete){
+        precioBillete = precioDelBillete;
+    }
+    
     /**
      * Imprime un billete para el cliente actual
      */
