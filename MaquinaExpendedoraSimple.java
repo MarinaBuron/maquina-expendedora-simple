@@ -26,6 +26,16 @@ public class MaquinaExpendedoraSimple {
     }
 
     /**
+     * Segundo constructor para crear overloading
+     */
+    public MaquinaExpendedoraSimple(int precioDelBillete, String destino){
+        precioBillete = precioDelBillete;
+        balanceClienteActual = 0;
+        totalDineroAcumulado = 0;
+        estacionOrigen = "León";
+        estacionDestino = destino;
+    }
+    /**
      * Devuelve el precio del billete
      */
     public int getPrecioBillete() {
