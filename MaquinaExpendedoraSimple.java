@@ -35,6 +35,7 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "León";
         estacionDestino = destino;
     }
+    
     /**
      * Devuelve el precio del billete
      */
@@ -48,7 +49,7 @@ public class MaquinaExpendedoraSimple {
     public int getBalanceClienteActual() {
         return balanceClienteActual;
     }
-
+    
     /**
      * Simula la introduccion de dinero por parte del cliente actual
      */
@@ -72,5 +73,13 @@ public class MaquinaExpendedoraSimple {
         totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
         // Queda preparada para el proximo cliente
         balanceClienteActual = 0;
+    }
+    
+    /**
+     * Devuelve el total del dinero acumulado en la máquina, después de 
+     * imprimir el billete
+     */
+    public int getTotalDineroAcumulado(){
+        return totalDineroAcumulado;
     }
 }
