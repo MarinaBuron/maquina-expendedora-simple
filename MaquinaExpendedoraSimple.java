@@ -101,6 +101,6 @@ public class MaquinaExpendedoraSimple {
      * Simula que el depósito de la máquina se vacía
      */
     public void vaciarDeposito(){
-        totalDineroAcumulado = totalDineroAcumulado - totalDineroAcumulado;
+        totalDineroAcumulado = 0;
     }
 }
